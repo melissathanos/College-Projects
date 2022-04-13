@@ -1,0 +1,29 @@
+body {
+	margin: 15px;
+	padding: 0;
+	background: #447799;
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+}
+.color {
+	background: #aacccc;
+}
+.website-header {
+	width: 100%;
+	min-height: 120px;
+	margin-bottom: 15px;
+}
+
+.content {
+	float: left;
+	width: 68%;
+	margin-right: 1%;
+	padding: 1%;
+}
+.sidebar {
+	width: 27%;	
+	padding: 1%;
+	float: right;
+}

@@ -1,0 +1,110 @@
+/*	Styling for the top-level menu container, to include positioning
+	from the left margin of the page or containing element.   */
+
+div.horizontalcssmenu {
+	margin-left: 4.5%;
+	margin-right: 5.0%;
+	border-top: 1px dashed #552222;
+	border-bottom: 1px dashed #774444;
+	border-left: 1px dotted #883388;
+	border-right: 1px dotted #883388;
+	}
+
+.horizontalcssmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+li.MenuHead {
+	text-align: center;
+}
+
+/*Top level list items*/
+.horizontalcssmenu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+	}
+
+/*Top level menu link items style*/
+.horizontalcssmenu ul li a{
+	display: block;
+	width: 111px; /*Width of top level menu link items*/
+	padding: 10px 7px;
+	font: bold 13px Arial;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ee2222;
+	}
+
+/*Sub level menu*/
+.horizontalcssmenu ul li ul{
+	left: 0;
+	top: 0;
+	position: absolute;
+	margin-left: 20px;
+	display: block;
+	visibility: hidden;
+	z-index: 100;
+	}
+
+/*Sub level menu list items*/
+.horizontalcssmenu ul li ul li{
+	display: inline;
+	float: none;
+	}
+
+/* Sub level menu links style */
+.horizontalcssmenu ul li ul li a{
+	width: 154px; /*width of sub menu levels*/
+	text-align: left;
+	font: bold 13px Verdana, Courier;
+	text-transform: none;
+	padding: 10px 8px;
+	background: #030306;
+	border: 1px dotted #221144;
+	color: #bbbbff;
+	opacity: 0.70;
+	filter: alpha(opacity=70);
+	}
+
+.horizontalcssmenu ul li a:hover{
+	background: #000000 url('img2_3.png') center right no-repeat;
+	color: #ffdddd;
+	opacity: 0.88;
+	filter: alpha(opacity=88);
+	}
+
+.horizontalcssmenu ul li ul li a:hover{
+	background: #030323 url('img2_3b.png') center right no-repeat;
+	color: #ffff33;
+	font: bold 13px Arial, Courier;
+	font-style: oblique;
+	text-transform: uppercase;
+	padding-left: 3px;
+	padding-right: 13px;
+	}
+
+/* Add a downward-arrow to menus that have multiple items. */
+li#MultiMenu {
+	Background: url('Tooth2.png') center right no-repeat;
+	}
+
+.horizontalcssmenu .arrowdiv{
+	position: absolute;
+	right: 0;
+/*	Background: url('Tooth.png') center right no-repeat; */
+	}
+
+/*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+* html p#iepara{
+	padding-top: 1em;
+	}
+	
+/* Holly Hack for IE \*/
+* html .horizontalcssmenu ul li { float: left; height: 1%; }
+* html .horizontalcssmenu ul li a { height: 1%; }
+/* End */
+
+

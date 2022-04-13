@@ -1,0 +1,38 @@
+body {
+	margin: 15px;
+	padding: 0;
+	background: #447799;
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+}
+.container {
+	width: 960px;
+	margin: auto;
+}
+.color {
+	background: #aacccc;
+}
+.website-header {
+	width: 960px;
+	min-height: 120px;
+	margin-bottom: 15px;
+}
+.content {
+	float: left;
+	width: 440px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 10px;
+}
+.sidebar {
+	width: 220px;	
+	padding: 10px;
+	float: right;
+}
+.left-col {
+	width: 220;
+	float: left;
+	padding: 10px;
+}
